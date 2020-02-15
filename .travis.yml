@@ -9,6 +9,7 @@ script:
   - docker run testimage npm run test -- --coverage
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "docker"
